@@ -1,13 +1,12 @@
 import styled, { css } from 'styled-components'
 
-import { LogoReact } from '@styled-icons/ionicons-solid/LogoReact'
-
 export const Container = styled.div`
+    margin: auto -50px;
    
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
 
-    ::after
+    /* ::after
 {
     content: '';
     position: absolute;
@@ -16,29 +15,44 @@ export const Container = styled.div`
     width: 100%;
     height: 70%;
     background: linear-gradient(187deg, #01bdc6, #01bdc6 50%, transparent 50%, transparent);
-
-    
-    
    
-}
-
-background: linear-gradient(158deg, #e91e63, #e91e63 61%, #ffc107 50%, #ffc107);
+} */
   
 `
 
-export const Cards = styled.div`
-    position: absolute;
+export const Title = styled.h1`
+    color: var(--color-text-white);
+    padding: 0 50px 70px;
+    font-size: var(--font-title);
+`
+
+const ContentRowCSS = css`
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0 50px;
     justify-content: space-around;
-    padding-top: var(--padding-top-of-container);    
-
+    padding-bottom: var(--padding-container); 
+    
 `
 
-const cardCSS = css`
-    width: 300px;
+export const ContentRowOne = styled.div`
+    padding-top: var(--padding-container);    
+    
+    ${ContentRowCSS}
+    background: linear-gradient(172deg, var(--color-background-dark), var(--color-background-dark) 59%, var(--color-primary) 50%, var(--color-primary));
+    /* position: absolute; */
+   
+`
+export const ContentRowTwo = styled.div`
+    ${ContentRowCSS}
+    background: linear-gradient(6.2deg, var(--color-background-dark), var(--color-background-dark) 64%, var(--color-primary) 64%, var(--color-primary));
+`
+
+export const WrapperCard = styled.div`
+      /* width: 300px; */
+      height: 430px;
     background: #ffffff3d;
     backdrop-filter: blur(21px);
     border-radius: 7px;
@@ -46,8 +60,8 @@ const cardCSS = css`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 15px;
-    margin: 5px 15px;
+    padding: 10px;
+    
     box-shadow: -1px 15px 30px -12px black;
     transition: 1s;
    
@@ -64,51 +78,71 @@ const cardCSS = css`
         width: 100%;
         height: 100%;
         border-radius: 7px;
-        background: linear-gradient(158deg, #ffc107, #ffc107 61%, #e91e63 50%, #e91e63);
+        background: linear-gradient(158deg, var(--color-background-dark), var(--color-background-dark) 61%, #e91e63 50%, #e91e63);
         transition: opacity 0.5s ease-out;
         z-index: 2;
         opacity: 0;
     } 
     :hover:after {
   opacity: 1;
-}
-
-    >svg{
-        z-index: 3;  
-        transition: color .5s;      
-    }
-    >span{
+} 
+    >div{
         z-index: 3;
+    }
+
+    >div img{
+        border-radius: 7px;
     }
    
     >h3{
-        padding: 5px 0 25px;
-        color: var(--color-text-black);
+        padding: 19px 0 19px;
+        color: var(--color-text-white);
         z-index: 3;
     }
     >p{
-        color: var(--color-text-black-fosco);
+        opacity: 0;
+        position: absolute;
+        bottom: 70px;
         text-align: center;
+        color: var(--color-text-white);
+        transition: 1.5s;
+    }
+    >a{
+        position: absolute;
+        bottom: 10px;
         z-index: 3;
+        width: 147px;
+        background: #d60077;
+        box-shadow: -1px 15px 30px -12px black;
+        padding: 10px;
+        text-decoration: navajowhite;
+        border-radius: 5px;
+        text-align: center;
+        color: var(--color-white-description);
+        font-weight: bold;
+        transition: .5s;
+    }
+    > a:hover{
+        transform: translateY(-5px);
+        background: var(--color-primary-dark);
     }
 
     :hover{
+        height: 510px;
         transform: translateY(-20px);
+        box-shadow: 3px 3px 30px -12px #ffffff57;
+       
+        >p{    
+            
+            opacity: 1;       
+            z-index: 3;
+        }
     }
-
 `
 
-export const CardOne = styled.div`
-    ${cardCSS}
-`
-export const CardTwo = styled.div`
-     ${cardCSS}
-`
-export const CardThree = styled.div`
-     ${cardCSS}
+export const ContentCard = styled.div`
+    height: 450px;
 `
 
-export const LogoReactIcon = styled(LogoReact)`
 
-`
 

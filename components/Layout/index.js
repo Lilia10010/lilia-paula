@@ -2,7 +2,7 @@ import MenuBarLeft from '../MenuBarLeft'
 import MenuBarTop from  '../MenuBarTop'
 import Home from '../Home'
 import RowOne from '../RowOne'
-// import RowTwo from '../RowTwo'
+import RowTwo from '../RowTwo'
 import Contact from '../Contact'
 import Footer from '../Footer'
 
@@ -16,13 +16,13 @@ export const Layout = () => {
     return(
         <Container>
             
-            <MenuBarLeft />
+            {/* <MenuBarLeft /> */}
 
             <WrapperContent>
                 <MenuBarTop />
                 <Home />
                 <RowOne />
-                {/* <RowTwo /> */}
+                <RowTwo />
                 <Contact />
 
                

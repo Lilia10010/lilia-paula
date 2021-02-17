@@ -4,7 +4,7 @@ const Footer = () =>{
 
     return(
         <Container>
-            Footer
+            © 2021 developed by <span> ❤ </span> Lília Paula ®
         </Container>
     )
 }

@@ -5,8 +5,15 @@ export const Container = styled.div`
     display: flex;
     width: 100%;
  
-    height: 27px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
 
-    color: #fff;
-    background: #f10;
+    color: var(--color-text-white);
+
+    >span{
+        color: var(--color-primary);
+        padding: 0 5px;
+    }
+    
 `

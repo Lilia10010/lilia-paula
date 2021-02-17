@@ -17,7 +17,7 @@ const Home = () => {
                         <div>Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quas sed provident 
                             pariatur nostrum quo labore nisi. </p>
-                        <a href="#">Contactar</a>
+                        <a href="#">Lília</a>
                </Description>
 
                <Avatar>

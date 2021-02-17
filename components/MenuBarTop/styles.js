@@ -5,16 +5,16 @@ export const Container = styled.div`
     justify-content: flex-end;
     position: fixed;
     z-index: 10;
-    width: calc(100% - var(--width-menu-left));
+    width: 100%;
 
     height: 50px;
     align-items: center;
 
-    background: #f2f2f24a;
+    background: #01010114;
 `
 
 export const MenuLinks = styled.div`
-    width: 500px;
+    /* width: 500px; */
     padding-right: 30px;
 
     ul{
