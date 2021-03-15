@@ -13,6 +13,14 @@ export default createGlobalStyle`
         box-sizing: border-box;
         outline: 0;
     }
+    
+    ::-moz-selection {
+    background: #d60077;
+    }
+
+    ::selection {
+    background: #d60077;
+    }
 
     :root{
         --color-background: #0d0c0e;
@@ -28,20 +36,14 @@ export default createGlobalStyle`
         --color-text-black-fosco: #0f0f0f;
 
         --font-title: 4.5em;
+        --font-title-mobile: 2.5em;
 
         --width-menu-left: 0;
 
         --padding-container: 50px;
 
     }
-    /* => F500BA, ,f500a7  F500A9*/
-    body{
-        background: var(--color-background);
-        color: var(--color-primary);        
-        -webkit-font-smoothing: antialiased;       
-    }
-
-    
+  
 
     body, input, button{
         /* font-family: 'Roboto Mono', monospace; */
@@ -50,4 +52,34 @@ export default createGlobalStyle`
     span, p{
         font-family: 'Roboto', sans-serif;
     }
+
+body, html
+{
+    scroll-behavior: smooth;
+
+    background: var(--color-background);
+   
+        color: var(--color-primary);        
+        -webkit-font-smoothing: antialiased; 
+    height: 100%;
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+      position: absolute;
+      opacity: 0.7;
+      
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #ff018e;
+      //background-color: rgb(61, 60, 66);
+      
+    }
+
+  }
 `

@@ -10,13 +10,12 @@ import {
 const Home = () => {
 
     return (
-        <Container>
+        <Container id="home-section">
             <Wrapper>
                 <Description>
                         <h3>Lília Paula</h3>
-                        <div>Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quas sed provident 
-                            pariatur nostrum quo labore nisi. </p>
+                        <div>Desenvolvedora front-end na Arkos Digital</div>
+                        <p>Desenvolvo aplicações responsivas, desenvolvo aplicações responsivas, desenvolvo aplicações responsivas.</p>
                         <a href="#">Lília</a>
                </Description>
 

@@ -1,33 +1,22 @@
-import MenuBarLeft from '../MenuBarLeft'
 import MenuBarTop from  '../MenuBarTop'
 import Home from '../Home'
-import RowOne from '../RowOne'
+import Project from '../Projects'
 import RowTwo from '../RowTwo'
 import Contact from '../Contact'
-import Footer from '../Footer'
 
 import { Container, WrapperContent } from './styles'
 
-
-
-
-
 export const Layout = () => {
+    
     return(
         <Container>
-            
-            {/* <MenuBarLeft /> */}
-
+            <MenuBarTop/>
             <WrapperContent>
-                <MenuBarTop />
                 <Home />
-                <RowOne />
+                <Project />
                 <RowTwo />
-                <Contact />
-
-               
-                <Footer />
-            </WrapperContent>
+                <Contact />            
+            </WrapperContent> 
         </Container>
        
     )

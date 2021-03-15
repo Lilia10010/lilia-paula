@@ -4,10 +4,6 @@ import styled from "styled-components";
 export const Container = styled.div`
     
     box-shadow: 3px 4px 10px #F110;
-
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
 `
 
 export const Wrapper = styled.div`
@@ -16,6 +12,15 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-top: 100px;
+
+    @media screen and (max-width: 975px) {
+        height:  auto;
+        flex-direction: column-reverse;
+       
+
+       
+    
+}
     
 `
 
@@ -58,10 +63,32 @@ export const Description = styled.div`
         transform: translateY(-5px);
         background: var(--color-primary-dark);
     }
+
+    @media screen and (max-width: 975px) {
+        width: 100%;
+
+        >h3{
+            font-size: var(--font-title-mobile);
+        }
+        > div{
+        color: var(--color-white-description);
+        font-size: 1.5em;
+    }
+}
 `
 
 export const Avatar = styled.div`
-    /* max-width: 47vw; */
+    text-align: center;
+
+
+@media screen and (max-width: 975px) {
+    >div{
+        max-width: 50% !important;
+    }
+    >img{
+        width: 35% !important;
+       }
+}
    
    
 `

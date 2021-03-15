@@ -1,53 +1,46 @@
 
-import Project from 'next/image'
+import { Github } from '@styled-icons/boxicons-logos/Github'
+import Icon from 'next/image'
 import { 
     Container,
     Title,
-    ContentRowOne,
-    WrapperCard,
-    ContentCard
+    WrapperTechs,
+    Tech,
+    BorderGradient
 } from './styles'
 
+
+
 const RowTwo = () => {
+
+
+
+   
     return(
         
-        <Container>
+        <Container id="home-techs">
             
             <Title>Techs</Title>
-            <ContentRowOne>
+            <BorderGradient>            
+                <WrapperTechs className="card">
+                    <Tech hover>
+                    <Icon src="/icon_react_js.svg" width="250px" height="250px" /> 
+                    </Tech>
+                    
+                    <Tech>
+                    <Icon src="/icon_next_js.svg" width="250px" height="250px" /> 
+                    </Tech>
+                    <Tech>
+                    <Icon src="/icon_javascript.svg" width="250px" height="250px" /> 
+                    </Tech>
+                    <Tech>
+                    <Icon src="/icon_typescript.svg" width="250px" height="250px" />                     
+                    </Tech>
+                </WrapperTechs>
+            </BorderGradient>
 
-                <ContentCard>
-                    <WrapperCard>
-                        <Project src="/witter_ui_clone.png" width="310" height="237px"/>                     
-                        <h3>UI Clone Twiiter</h3>  
-                        <p>Projeto de Ui clone:
-                        Interface do witter
-                        Responsivo
-                              </p>                  
-                        <a href="#">Ver mais</a>
-                    </WrapperCard>
-                </ContentCard>
-                
-                <ContentCard>
-                    <WrapperCard>
-                        <Project src="/witter_ui_clone.png" width="310" height="237px"/>                     
-                        <h3>UI Clone Twiiter</h3>  
-                        <p>Ui clone responsivo Ui clone responsivo Ui clone 
-                            responsivo Ui clone responsivo Ui clone responsivo  </p>                  
-                        <a href="#">Ver mais</a>
-                    </WrapperCard>
-                </ContentCard>
 
-                <ContentCard>
-                    <WrapperCard>
-                        <Project src="/witter_ui_clone.png" width="310" height="237px"/>                     
-                        <h3>UI Clone Twiiter</h3>  
-                        <p>Ui clone responsivo Ui clone responsivo Ui clone 
-                            responsivo Ui clone responsivo Ui clone responsivo  </p>                  
-                        <a href="#">Ver mais</a>
-                    </WrapperCard>
-                </ContentCard>
-            </ContentRowOne>
+
 
         </Container>
 
