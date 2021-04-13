@@ -42,6 +42,10 @@ export default createGlobalStyle`
 
         --padding-container: 50px;
 
+        @media screen and (max-width: 975px) {
+          --font-title: 2.5em;
+        }
+
     }
   
 
@@ -56,6 +60,7 @@ export default createGlobalStyle`
 body, html
 {
     scroll-behavior: smooth;
+    
 
     background: var(--color-background);
    
@@ -82,4 +87,69 @@ body, html
     }
 
   }
+
+
+
+  .react-modal-overlay
+    {
+        background: #ffffffd1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10; 
+    }
+    .react-modal-content
+    {
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+        
+      background: #000;
+      padding: 3rem;
+      position: absolute;
+      overflow: auto;
+      border-radius: 0.24rem;
+
+      ::-webkit-scrollbar-track {
+      background-color: transparent;
+      position: absolute;
+      opacity: 0.5;      
+     }
+
+      ::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #9c0358;
+        
+      }
+
+      
+    }
+
+    .react-modal-close
+    {
+        position: absolute;
+        right: 0.8rem;
+        top: 0.5rem;
+        font-weight: 800;
+        font-size: 1rem;
+        border: 0;
+        background: transparent;
+        transition: 0.2s;
+        color: #9c0358;
+        cursor: pointer;
+
+        &:hover
+        {
+            filter: brightness(0.7);
+        }
+    }
+
+ 
 `

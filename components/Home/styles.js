@@ -4,6 +4,11 @@ import styled from "styled-components";
 export const Container = styled.div`
     
     box-shadow: 3px 4px 10px #F110;
+    padding: 0 50px;
+
+    @media screen and (max-width: 575px){
+        padding: 0 10px;
+    }
 `
 
 export const Wrapper = styled.div`
@@ -16,11 +21,7 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 975px) {
         height:  auto;
         flex-direction: column-reverse;
-       
-
-       
-    
-}
+    }
     
 `
 
@@ -45,31 +46,62 @@ export const Description = styled.div`
         color: var(--color-white-description);
     }
 
-    > a{
-        font-size: 25px;
+    button
+    {  
+        cursor: pointer;
+        font-weight: 800; 
+        border: none;
+        position: relative;
+        display: inline-block;
         width: 247px;
-        background: #d60077;
-        padding: 15px;
-        text-decoration: navajowhite;
-        border-radius: 5px;
-        text-align: center;
-        color: var(--color-white-description);
-        font-weight: bold;
-        transition: .5s;
-        
+        height: 55px;
+        box-shadow: 3px 3px 4px -3px #ff009e;
+        margin-top: 20px;
     }
 
-    > a:hover{
-        transform: translateY(-5px);
-        background: var(--color-primary-dark);
+    button span
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: var(--color-background-dark);
+        background: var(--color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1rem;
+    }
+
+    button span:nth-child(2)
+    {
+        color: var(--color-primary);
+        background: var(--color-background-dark);
+        overflow: hidden;
+        z-index: 2;
+        transition: 0.5s;
+        clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 53%);
+    }
+
+    button span:nth-child(2):hover
+    {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+
+    }
+    button span:nth-child(1):hover ~ span:nth-child(2)
+    {
+        clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 45%);
+
+
     }
 
     @media screen and (max-width: 975px) {
         width: 100%;
-
-        >h3{
-            font-size: var(--font-title-mobile);
-        }
+        padding: unset;
+        
         > div{
         color: var(--color-white-description);
         font-size: 1.5em;
@@ -83,11 +115,16 @@ export const Avatar = styled.div`
 
 @media screen and (max-width: 975px) {
     >div{
-        max-width: 50% !important;
+        max-height: 261px;
     }
     >img{
         width: 35% !important;
        }
+}
+@media screen and (max-width: 575px) {
+    >div{
+        max-height: 157px;
+    }
 }
    
    

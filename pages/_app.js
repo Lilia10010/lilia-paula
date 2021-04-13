@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 import { ThemeProvider } from '../contexts/themeContext'
 
+import Modal from 'react-modal';
+
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -9,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-
+//Modal.setAppElement('#root')
 
 export default function App({ Component, pageProps }) {
   return (

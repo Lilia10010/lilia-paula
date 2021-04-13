@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
 position: relative;
-padding-top: 50px;
+padding: 50px 50px 0 50px;
   
 `
 
@@ -54,9 +54,14 @@ export const BorderGradient = styled.div`
 
 export const WrapperTechs = styled.div`
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     background: var(--color-white);
+
+    @media screen and (max-width: 575px) {
+        flex-direction: column;
+        align-items: center; 
+    }
     
 `
 
@@ -65,6 +70,12 @@ export const Tech = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    max-width: 200px;
+
+    @media screen and (max-width: 575px) {
+        max-width: 100px;
+    }
 
     
 `

@@ -6,7 +6,8 @@ export const StyledThemeContext = createContext({});
 
 export function ThemeProvider({ children }){
     const [theme, setTheme] = useState(darkTheme)
-    const currentTheme = theme[theme]
+    const currentTheme = theme.title
+    console.log('darkTheme', currentTheme)
 
     //const { dark, light } = useContext(StyledThemeContext)
     
@@ -17,7 +18,7 @@ export function ThemeProvider({ children }){
 
     
     return(
-        <StyledThemeContext.Provider
+        <StyledThemeContext.Provider theme={theme}
             value={{
                 theme,
                 toggleTheme,

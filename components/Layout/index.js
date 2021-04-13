@@ -10,6 +10,7 @@ export const Layout = () => {
     
     return(
         <Container>
+           
             <MenuBarTop/>
             <WrapperContent>
                 <Home />
@@ -17,6 +18,7 @@ export const Layout = () => {
                 <RowTwo />
                 <Contact />            
             </WrapperContent> 
+           
         </Container>
        
     )
