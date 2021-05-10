@@ -42,7 +42,7 @@ export const IconsSocial = styled.div`
     }
 
     a{
-      font-size: 1.5em;
+      font-size: 1.17em;
       font-weight: 700;
       transition: 1s;      
     }
@@ -56,7 +56,6 @@ export const EmailCopy = styled.a`
   display: flex;
   justify-content: center;
   position: relative;  
-  font-size: 1.5em;
   font-weight: 700;
   transition: 1s;  
   cursor: grab;

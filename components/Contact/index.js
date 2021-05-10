@@ -5,6 +5,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Github } from '@styled-icons/boxicons-logos/Github'
 import { Linkedin } from '@styled-icons/fa-brands/Linkedin'
+import { Whatsapp } from '@styled-icons/fa-brands/Whatsapp'
 import { Copy } from '@styled-icons/fa-regular/Copy'
 
 import ContactImage from 'next/image'
@@ -84,11 +85,14 @@ const Contact = () => {
                 <ContactImage src="/contact_image.svg" width="350px" height="350px" /> 
                   <IconsSocial>  
                     <div>
+                        <a href="https://api.whatsapp.com/send?phone=5585981326645&text=Ol%C3%A1%20L%C3%ADlia%2C%20gostaria%20de%20bater%20um%20papo%20com%20voc%C3%AA%20%3A)" target="_blank">
+                            <Whatsapp width="50"/>                
+                        </a>
                         <a href="https://github.com/lilia10010" target="_blank">
-                            <Github width="70"/>                
+                            <Github width="50"/>                
                         </a>
                         <a href="https://www.linkedin.com/in/lilia-paula-neiva/" target="_blank">              
-                            <Linkedin width="70"/>
+                            <Linkedin width="50"/>
                         </a>           
                     </div>              
                     <EmailCopy onClick={() => handleCopy('wrapperCopy') }>

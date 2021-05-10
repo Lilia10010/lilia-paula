@@ -20,10 +20,10 @@ export const BorderGradient = styled.div`
     ::before{
     content: '';
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
     /* background: #fff; */
     z-index: -1;
     }
@@ -31,10 +31,10 @@ export const BorderGradient = styled.div`
     ::after{
     content: '';
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
     /* background: #fff; */
     z-index: -1;
     /* filter:  blur(40px); */
@@ -52,26 +52,29 @@ export const BorderGradient = styled.div`
 
 // const ContentRowCSS = css``
 
-export const WrapperTechs = styled.div`
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    background: var(--color-white);
+export const WrapperSlider = styled.div`
+    background: #fff;
+    cursor: pointer; 
 
-    @media screen and (max-width: 575px) {
-        flex-direction: column;
-        align-items: center; 
+    .slick-slide{
+        text-align: center;
     }
-    
 `
 
 export const Tech = styled.div`
+div{
+
     display: flex;
-    flex-direction: column;
     align-items: center;
     position: relative;
 
     max-width: 200px;
+    text-align: center;
+
+     
+
+  
+}
 
     @media screen and (max-width: 575px) {
         max-width: 100px;
@@ -79,3 +82,4 @@ export const Tech = styled.div`
 
     
 `
+

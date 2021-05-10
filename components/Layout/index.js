@@ -1,7 +1,7 @@
 import MenuBarTop from  '../MenuBarTop'
 import Home from '../Home'
 import Project from '../Projects'
-import RowTwo from '../RowTwo'
+import Techs from '../Techs'
 import Contact from '../Contact'
 
 import { Container, WrapperContent } from './styles'
@@ -15,7 +15,7 @@ export const Layout = () => {
             <WrapperContent>
                 <Home />
                 <Project />
-                <RowTwo />
+                <Techs />
                 <Contact />            
             </WrapperContent> 
            

@@ -46,20 +46,20 @@ export const Description = styled.div`
         color: var(--color-white-description);
     }
 
-    button
+    a
     {  
         cursor: pointer;
         font-weight: 800; 
         border: none;
         position: relative;
         display: inline-block;
-        width: 247px;
-        height: 55px;
-        box-shadow: 3px 3px 4px -3px #ff009e;
+        width: 218px;
+        height: 54px;
+        box-shadow: 3px 3px 8px -3px #ff009e85;
         margin-top: 20px;
     }
 
-    button span
+    a span
     {
         position: absolute;
         top: 0;
@@ -71,12 +71,16 @@ export const Description = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: 1.11rem;
+
+        svg
+        {
+            margin-right: 11px;
+        }
     }
 
-    button span:nth-child(2)
+    a span:nth-child(2)
     {
         color: var(--color-primary);
         background: var(--color-background-dark);
@@ -86,15 +90,14 @@ export const Description = styled.div`
         clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 53%);
     }
 
-    button span:nth-child(2):hover
+    a span:nth-child(2):hover
     {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
 
     }
-    button span:nth-child(1):hover ~ span:nth-child(2)
+    a span:nth-child(1):hover ~ span:nth-child(2)
     {
         clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 45%);
-
 
     }
 

@@ -6,7 +6,7 @@ export const Container = styled.div`
 padding: 50px 50px 0 50px;
 
     
-    background: linear-gradient(172deg, var(--color-background-dark), var(--color-background-dark) 59%, var(--color-primary) 50%, var(--color-primary)); 
+    /* background: linear-gradient(172deg, var(--color-background-dark), var(--color-background-dark) 59%, var(--color-primary) 50%, var(--color-primary));  */
 
     @media screen and (max-width: 975px) {
         background: unset;  

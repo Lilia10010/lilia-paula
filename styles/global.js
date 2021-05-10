@@ -92,7 +92,7 @@ body, html
 
   .react-modal-overlay
     {
-        background: #ffffffd1;
+        background: #ffffff63;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -102,16 +102,19 @@ body, html
     }
     .react-modal-content
     {
-      top: 40px;
-      left: 40px;
-      right: 40px;
-      bottom: 40px;
+      top: 70px;
+      left: 90px;
+      right: 90px;
+      bottom: 70px;
         
       background: #000;
       padding: 3rem;
       position: absolute;
       overflow: auto;
       border-radius: 0.24rem;
+
+      border-bottom: 3px solid #000;
+      border-top: 3px solid #000;
 
       ::-webkit-scrollbar-track {
       background-color: transparent;
@@ -125,7 +128,7 @@ body, html
 
       ::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        background: #9c0358;
+        background: #fff;
         
       }
 
@@ -134,15 +137,16 @@ body, html
 
     .react-modal-close
     {
-        position: absolute;
+        position: fixed;
         right: 0.8rem;
-        top: 0.5rem;
+        top: 5.5rem;
+        right: 7rem;
         font-weight: 800;
         font-size: 1rem;
         border: 0;
         background: transparent;
         transition: 0.2s;
-        color: #9c0358;
+        color: #fff;
         cursor: pointer;
 
         &:hover
