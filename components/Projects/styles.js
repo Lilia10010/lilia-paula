@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 //margin: auto -50px;
 //padding-top: 50px;
-padding: 50px 50px 0 50px;
+padding: 50px 0px 0 ;
 
     
     /* background: linear-gradient(172deg, var(--color-background-dark), var(--color-background-dark) 59%, var(--color-primary) 50%, var(--color-primary));  */
@@ -25,14 +25,20 @@ export const WrapperCard = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+   
     /* background: linear-gradient(172deg, var(--color-primary), var(--color-primary) 59%, var(--color-background-dark) 50%, var(--color-background-dark)); */
 
+`
+export const CardColumn = styled.div`
+    display: flex;
+    justify-content: center;
+    min-width: 30%;
 `
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     padding: 0 5px;
     margin-bottom: 65px !important;

@@ -52,4 +52,8 @@ export const Teste = styled.div`
                 0 0 100px var(--color-primary);
         
     }
+
+    @media screen and (max-width: 575px){       
+        display:none;
+    }
 `

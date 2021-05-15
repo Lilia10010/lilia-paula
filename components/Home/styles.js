@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     
     box-shadow: 3px 4px 10px #F110;
-    padding: 0 50px;
+    /* padding: 0 50px; */
 
     @media screen and (max-width: 575px){
         padding: 0 10px;
@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-top: 100px;
 

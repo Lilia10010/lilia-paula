@@ -15,6 +15,7 @@ import {
     Container,
     IconsSocial,
     WrapperContact,
+    WrapperImageContact,
     EmailCopy,
     Footer
 
@@ -79,10 +80,12 @@ const Contact = () => {
     return(
        
         <Container id="home-contact">   
-         <HoverEffect />       
+         <HoverEffect className="HoverEffect"/>       
 
             <WrapperContact>
-                <ContactImage src="/contact_image.svg" width="350px" height="350px" /> 
+                <WrapperImageContact>
+                    <ContactImage src="/contact_image.svg" width="450px" height="450px" /> 
+                </WrapperImageContact>
                   <IconsSocial>  
                     <div>
                         <a href="https://api.whatsapp.com/send?phone=5585981326645&text=Ol%C3%A1%20L%C3%ADlia%2C%20gostaria%20de%20bater%20um%20papo%20com%20voc%C3%AA%20%3A)" target="_blank">

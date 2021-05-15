@@ -3,6 +3,9 @@ import { createGlobalStyle } from 'styled-components'
 
 
 export default createGlobalStyle`
+  #__next{
+    padding: 0 20px;
+  }
     @font-face {
         font-family: 'Quicksand', sans-serif;
         src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
@@ -155,5 +158,28 @@ body, html
         }
     }
 
+    @media screen and (max-width: 575px){
+      .react-modal-content
+    {
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+        
+     
+      padding: 1rem;
+     
+    }
+
+    .react-modal-close
+    {
+        right: 2rem;
+        top: 2rem;
+        
+    }
+
+    }
+
+  
  
 `

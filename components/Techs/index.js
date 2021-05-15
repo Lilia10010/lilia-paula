@@ -49,19 +49,31 @@ const Techs  = () => {
                    { process.browser && settings ? (
                        <Slider {...settings}>
                         <Tech>
-                            <Icon src="/icon_react_js.svg" width="250px" height="250px" /> 
+                            <Icon src="/icon_html_css.svg" width="200px" height="200px" /> 
+                        </Tech>
+                        <Tech>
+                            <Icon src="/icon_react_js.svg" width="200px" height="200px" /> 
                         </Tech>                    
                         <Tech>
-                            <Icon src="/icon_next_js.svg" width="250px" height="250px" /> 
+                            <Icon src="/icon_next_js.svg" width="200px" height="200px" /> 
                         </Tech>
                         <Tech>
-                            <Icon src="/icon_javascript.svg" width="250px" height="250px" /> 
-                        </Tech>
-                        <Tech>
-                            <Icon src="/icon_typescript.svg" width="250px" height="250px" />                     
+                            <Icon src="/icon_javascript.svg" width="200px" height="200px" />                     
                         </Tech>         
                         <Tech>
-                            <Icon src="/icon_gastby.svg" width="250px" height="250px" />                     
+                            <Icon src="/icon_typescript.svg" width="200px" height="200px" />                     
+                        </Tech>         
+                        <Tech>
+                            <Icon src="/icon_sass.svg" width="200px" height="200px" />                     
+                        </Tech>         
+                        <Tech>
+                            <Icon src="/icon_styled_components.svg" width="200px" height="200px" />                     
+                        </Tech>         
+                        <Tech>
+                            <Icon src="/icon_tailwindcss.svg" width="200px" height="200px" />                     
+                        </Tech>         
+                        <Tech>
+                            <Icon src="/icon_gastby.svg" width="200px" height="200px" />                     
                         </Tech>         
                     </Slider>
 

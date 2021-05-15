@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
 position: relative;
-padding: 50px 50px 0 50px;
+padding: 50px 10px 0 10px;
   
 `
 
@@ -58,6 +58,13 @@ export const WrapperSlider = styled.div`
 
     .slick-slide{
         text-align: center;
+    }
+
+    .slick-dots{
+        li button::before{
+            color: #fff !important;
+           
+        }
     }
 `
 

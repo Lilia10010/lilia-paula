@@ -15,6 +15,8 @@ export const Container = styled.div`
 
   @media screen and (max-width: 575px){
         padding: 50px 0 10px;
+
+       .teste{display:none;}
     }
 `
 
@@ -31,7 +33,8 @@ export const IconsSocial = styled.div`
     }
 
     div  svg{
-        color: var(--color-primary);
+        color: var(--color-text-white);
+        opacity: 0.9;
         transition: 1s;
         -webkit-box-reflect: below -5px linear-gradient(transparent, #0001, #0003);
     }
@@ -42,13 +45,17 @@ export const IconsSocial = styled.div`
     }
 
     a{
-      font-size: 1.17em;
+      font-size: 1rem;
       font-weight: 700;
       transition: 1s;      
     }
     a:hover{
       color: var(--color-primary-dark);  
       
+    }
+
+    @media screen and (max-width: 575px){
+        padding: 55px 0;
     }
 ` 
 
@@ -59,6 +66,8 @@ export const EmailCopy = styled.a`
   font-weight: 700;
   transition: 1s;  
   cursor: grab;
+  color: var(--color-text-white);
+        opacity: 0.9;
 
       >svg{
         padding-left: 5px;
@@ -116,4 +125,16 @@ export const WrapperContact = styled.div`
 export const Footer = styled.div`
   color: var(--color-text-white);
    padding: 15px 0;  
+
+   @media screen and (max-width: 575px){
+        
+    }
+`
+export const WrapperImageContact = styled.div`
+ @media screen and (max-width: 575px){
+        display: none;
+    }
+
+
+ 
 `
