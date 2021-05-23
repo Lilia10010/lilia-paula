@@ -7,7 +7,7 @@ padding: 50px 10px 0 10px;
 `
 
 export const Title = styled.h1`
-    color: var(--color-text-white);
+    color: var(--color-text-gray-300);
     padding-bottom: 50px;    
     font-size: var(--font-title);
 `

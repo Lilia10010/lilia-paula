@@ -11,12 +11,6 @@ export const Container = styled.div`
     height: 50px;
     align-items: center;
 
-   background: #01010147;
-
-   @media screen and (max-width: 342px){
-    background: unset;       
-   }
- 
 `
 
 export const MenuLinks = styled.div`
@@ -41,11 +35,11 @@ export const MenuLinks = styled.div`
     font-weight: 800;
     text-decoration: none;
     padding-right: 20px;
-    color: var(--color-primary);
+    color: var(--color-text-gray-300);
     transition: 1s;
     }
     ul li a:hover{
-    color: var(--color-primary-hover);
+    color: var(--color-text-gray-500);
     }
 
 

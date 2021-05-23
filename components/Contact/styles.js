@@ -81,7 +81,7 @@ export const EmailCopy = styled.a`
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
-      color: var(--color-primary);       
+      color: #000;       
     }
 
 

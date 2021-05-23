@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import Modal from 'react-modal';
 import { StarOutlined } from '@styled-icons/entypo/StarOutlined'
-
 import ImageOne from 'next/image'
+import { projectsList } from './projects'
+
+
 import { 
     Container,
     Title,
@@ -28,221 +30,69 @@ const Project = () => {
         setIsModalOpen(false)
     }
 
+    if (typeof(window) !== 'undefined') {
+        Modal.setAppElement('body')
+      }
+
     return(
         <Container id="home-projects">
             <Title>Projetos</Title>
 
             <WrapperCard>
-                <CardColumn>                
-                    <Card>
-                        <WrapperImg>
-                            <ImageOne src="/portal-de-noticiasEvoxNews.png" width="290px" height="330px"/>                       
-                        </WrapperImg>
-                        <Content>
-                            <h2>evox News</h2>
-                            <p>Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.</p>
-                        </Content>
-                            <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
+                {projectsList.length >=1 ? (
+                    
+                    projectsList.map((e, index) => {
+                       console.log('indexxx', index)
+        
+        return(
+            <CardColumn key={index}>                
+            <Card>
+                <WrapperImg>
+                    <img src={e.coverImage} alt={e.alt}/>
+                </WrapperImg>
+                <Content>
+                    <h2>{e.coverTitle}</h2>
+                    <p>{e.coverDescription}</p>
+                </Content>
+                    <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
 
-                            <Modal
-                                isOpen={isModalOpen}
-                                onRequestClose={handleCloseModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="react-modal-overlay"
-                                className="react-modal-content"
-                            >
-                                <button
-                                    type="button" 
-                                    onClick={handleCloseModal}
-                                    className="react-modal-close"
-                                >
-                                    X
-                                </button>
-                                <WrapperImgProject>
-                                    <p>Aplicativo de Notícias de Tecnologia</p>
-                                    <ImageOne src="/portal-de-noticiasEvoxNews.png" width="1920px" height="2319px"/> 
-                                    <StarOutlined size={13} />
-                                    <ImageOne src="/portal-de-noticiasEvoxNews02.png" width="1913px" height="576px"/> 
-                                </WrapperImgProject>
-                        </Modal>
-                    </Card>       
-                </CardColumn>
+                    <Modal
+                        key={index}
+                        isOpen={isModalOpen}
+                        onRequestClose={handleCloseModal}
+                        contentLabel="Example Modal"
+                        overlayClassName="react-modal-overlay"
+                        className="react-modal-content"
+                        // ariaHideApp={false}
+                    >
+                        <button
+                            type="button" 
+                            onClick={handleCloseModal}
+                            className="react-modal-close"
+                        >
+                            X
+                        </button>
+                        <WrapperImgProject>
+                            {console.log('index', index)}
+                            <h2>{e.coverTitle}</h2>
+                            <h2>{index}</h2>
+                            <a href={e.insideProjectLink}>x</a>
+                            <p>{e.insideDescription}</p>
+                            <img src={e.insideImage['insideImageOne']} alt={e.alt}/>
+                            <img src={e.insideImage['insideImageTwo']} alt={e.alt}/>
+                           
+                            
+                        </WrapperImgProject>
+                </Modal>
+            </Card>       
+        </CardColumn>
+        )
+    })
 
-                <CardColumn>                
-                    <Card>
-                        <WrapperImg>
-                            <ImageOne src="/portal-de-noticiasEvoxNews.png" width="290px" height="330px"/>                       
-                        </WrapperImg>
-                        <Content>
-                            <h2>evox News</h2>
-                            <p>Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.</p>
-                        </Content>
-                            <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
 
-                            <Modal
-                                isOpen={isModalOpen}
-                                onRequestClose={handleCloseModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="react-modal-overlay"
-                                className="react-modal-content"
-                            >
-                                <button
-                                    type="button" 
-                                    onClick={handleCloseModal}
-                                    className="react-modal-close"
-                                >
-                                    X
-                                </button>
-                                <WrapperImgProject>
-                                    <p>Aplicativo de Notícias de Tecnologia</p>
-                                    <ImageOne src="/portal-de-noticiasEvoxNews.png" width="1920px" height="2319px"/> 
-                                    <StarOutlined size={13} />
-                                    <ImageOne src="/portal-de-noticiasEvoxNews02.png" width="1913px" height="576px"/> 
-                                </WrapperImgProject>
-                        </Modal>
-                    </Card>       
-                </CardColumn>
+                    
+                ) : (null)}
 
-                <CardColumn>                
-                    <Card>
-                        <WrapperImg>
-                            <ImageOne src="/portal-de-noticiasEvoxNews.png" width="290px" height="330px"/>                       
-                        </WrapperImg>
-                        <Content>
-                            <h2>evox News</h2>
-                            <p>Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.</p>
-                        </Content>
-                            <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
-
-                            <Modal
-                                isOpen={isModalOpen}
-                                onRequestClose={handleCloseModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="react-modal-overlay"
-                                className="react-modal-content"
-                            >
-                                <button
-                                    type="button" 
-                                    onClick={handleCloseModal}
-                                    className="react-modal-close"
-                                >
-                                    X
-                                </button>
-                                <WrapperImgProject>
-                                    <p>Aplicativo de Notícias de Tecnologia</p>
-                                    <ImageOne src="/portal-de-noticiasEvoxNews.png" width="1920px" height="2319px"/> 
-                                    <StarOutlined size={13} />
-                                    <ImageOne src="/portal-de-noticiasEvoxNews02.png" width="1913px" height="576px"/> 
-                                </WrapperImgProject>
-                        </Modal>
-                    </Card>       
-                </CardColumn>
-
-                <CardColumn>                
-                    <Card>
-                        <WrapperImg>
-                            <ImageOne src="/portal-de-noticiasEvoxNews.png" width="290px" height="330px"/>                       
-                        </WrapperImg>
-                        <Content>
-                            <h2>evox News</h2>
-                            <p>Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.</p>
-                        </Content>
-                            <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
-
-                            <Modal
-                                isOpen={isModalOpen}
-                                onRequestClose={handleCloseModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="react-modal-overlay"
-                                className="react-modal-content"
-                            >
-                                <button
-                                    type="button" 
-                                    onClick={handleCloseModal}
-                                    className="react-modal-close"
-                                >
-                                    X
-                                </button>
-                                <WrapperImgProject>
-                                    <p>Aplicativo de Notícias de Tecnologia</p>
-                                    <ImageOne src="/portal-de-noticiasEvoxNews.png" width="1920px" height="2319px"/> 
-                                    <StarOutlined size={13} />
-                                    <ImageOne src="/portal-de-noticiasEvoxNews02.png" width="1913px" height="576px"/> 
-                                </WrapperImgProject>
-                        </Modal>
-                    </Card>       
-                </CardColumn>
-                <CardColumn>                
-                    <Card>
-                        <WrapperImg>
-                            <ImageOne src="/portal-de-noticiasEvoxNews.png" width="290px" height="330px"/>                       
-                        </WrapperImg>
-                        <Content>
-                            <h2>evox News</h2>
-                            <p>Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.</p>
-                        </Content>
-                            <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
-
-                            <Modal
-                                isOpen={isModalOpen}
-                                onRequestClose={handleCloseModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="react-modal-overlay"
-                                className="react-modal-content"
-                            >
-                                <button
-                                    type="button" 
-                                    onClick={handleCloseModal}
-                                    className="react-modal-close"
-                                >
-                                    X
-                                </button>
-                                <WrapperImgProject>
-                                    <p>Aplicativo de Notícias de Tecnologia</p>
-                                    <ImageOne src="/portal-de-noticiasEvoxNews.png" width="1920px" height="2319px"/> 
-                                    <StarOutlined size={13} />
-                                    <ImageOne src="/portal-de-noticiasEvoxNews02.png" width="1913px" height="576px"/> 
-                                </WrapperImgProject>
-                        </Modal>
-                    </Card>       
-                </CardColumn>
-                <CardColumn>                
-                    <Card>
-                        <WrapperImg>
-                            <ImageOne src="/portal-de-noticiasEvoxNews.png" width="290px" height="330px"/>                       
-                        </WrapperImg>
-                        <Content>
-                            <h2>evox News</h2>
-                            <p>Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.</p>
-                        </Content>
-                            <button onClick={handleOpenModal}><span>Ver mais</span><span>Ver mais</span></button>
-
-                            <Modal
-                                isOpen={isModalOpen}
-                                onRequestClose={handleCloseModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="react-modal-overlay"
-                                className="react-modal-content"
-                            >
-                                <button
-                                    type="button" 
-                                    onClick={handleCloseModal}
-                                    className="react-modal-close"
-                                >
-                                    X
-                                </button>
-                                <WrapperImgProject>
-                                    <p>Aplicativo de Notícias de Tecnologia</p>
-                                    <ImageOne src="/portal-de-noticiasEvoxNews.png" width="1920px" height="2319px"/> 
-                                    <StarOutlined size={13} />
-                                    <ImageOne src="/portal-de-noticiasEvoxNews02.png" width="1913px" height="576px"/> 
-                                </WrapperImgProject>
-                        </Modal>
-                    </Card>       
-                </CardColumn>
-               
-             
-                     
              </WrapperCard>
 
 

@@ -62,11 +62,13 @@ export const Card = styled.div`
         cursor: pointer;
         font-weight: 800; 
         border: none;
-        position: relative;
+        position: absolute;
+        bottom: -7px;
+
         display: inline-block;
         width: 160px;
         height: 37px;
-        box-shadow: 3px 3px 4px -3px #ff009e;
+        /* box-shadow: 3px 3px 4px -3px #ff009e; */
         margin-top: 20px;
     }
 
@@ -78,7 +80,7 @@ export const Card = styled.div`
         width: 100%;
         height: 100%;
         color: var(--color-background-dark);
-        background: var(--color-primary);
+        background: var(--color-text-gray-800);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,7 +91,7 @@ export const Card = styled.div`
 
     button span:nth-child(2)
     {
-        color: var(--color-primary);
+        color: var(--color-text-gray-800);
         background: var(--color-background-dark);
         overflow: hidden;
         z-index: 2;
@@ -99,7 +101,7 @@ export const Card = styled.div`
 
     button span:nth-child(2):hover
     {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);        
 
     }
     button span:nth-child(1):hover ~ span:nth-child(2)
@@ -112,7 +114,8 @@ export const Card = styled.div`
     :hover{
         background: #ffffff57;
         transform: translateY(-20px);
-        box-shadow: 3px 3px 30px -12px #ffffff57;
+        box-shadow: 4px 4px 14px -3px #b8b8b891;
+        /* box-shadow: 3px 3px 30px -12px #ffffff57; */
     }
 
    
@@ -121,12 +124,20 @@ export const Card = styled.div`
 `
 export const WrapperImg = styled.div`
 
-    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+
+    }
     width: 260px;
-    height: 260px;
+    height: 290px;
+
+    position: relative;
     top: -60px;
+
+    background: var(--color-gray-900);
  
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7);
 `
 
 export const WrapperImgProject = styled.div`
@@ -145,6 +156,7 @@ export const WrapperImgProject = styled.div`
     }
 `
 export const Content = styled.div`
+    top: -27px;
     position: relative;
     text-align: center;
     color: rgb(17, 17, 17);

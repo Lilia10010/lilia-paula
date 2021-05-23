@@ -34,9 +34,16 @@ export default createGlobalStyle`
         --color-white: #fff;   
         --color-white-description: #e8e8e8;   
         --color-gradient: linear-gradient(155.34deg,#ff018e -0.59%,#ffa17b 51.28%,#ffcd1e);
-        --color-text-white: #f9f9f9;
         --color-text-black: #000;
         --color-text-black-fosco: #0f0f0f;
+
+        --color-text-white: #ddd;
+        --color-text-gray-300: #ddd;
+        --color-text-gray-500: #a1a1a1;
+        --color-text-gray-700: #717171;
+        --color-text-gray-800: #7e7e7e;
+        
+        --color-gray-900: #585858;
 
         --font-title: 4.5em;
         --font-title-mobile: 2.5em;
@@ -67,7 +74,7 @@ body, html
 
     background: var(--color-background);
    
-        color: var(--color-primary);        
+        color: var(--color-text-gray-300);        
         -webkit-font-smoothing: antialiased; 
     height: 100%;
 
@@ -95,7 +102,7 @@ body, html
 
   .react-modal-overlay
     {
-        background: #ffffff63;
+        background: #93939347;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -105,10 +112,10 @@ body, html
     }
     .react-modal-content
     {
-      top: 70px;
-      left: 90px;
-      right: 90px;
-      bottom: 70px;
+      top: 85px;
+      left: 20%;
+      right: 20%;
+      bottom: 85px;
         
       background: #000;
       padding: 3rem;
@@ -140,10 +147,9 @@ body, html
 
     .react-modal-close
     {
-        position: fixed;
-        right: 0.8rem;
-        top: 5.5rem;
-        right: 7rem;
+        position: fixed; 
+        top: 7rem;
+        right: 22%;
         font-weight: 800;
         font-size: 1rem;
         border: 0;

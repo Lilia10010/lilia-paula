@@ -1,6 +1,9 @@
 import AvatarImage from 'next/image'
 import { Whatsapp } from '@styled-icons/fa-brands/Whatsapp'
 
+import SVGHome from '../SVGHome'
+
+
 import { 
     Container,
      Wrapper,
@@ -24,15 +27,12 @@ const Home = () => {
                </Description>
 
                <Avatar>
-                <AvatarImage src="/home-perfil.svg" width="500px" height="500px" /> 
+                   <SVGHome />
                </Avatar>
-         
+    
 
             </Wrapper>
         </Container>
-
-           
-        
 
     )
 }

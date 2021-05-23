@@ -37,13 +37,13 @@ export const Description = styled.div`
     }
 
     > div{
-        color: var(--color-white-description);
+        color: var(--color-text-gray-500);
         font-size: 2.5em;
     }
 
     > p{
         padding: 50px 0 24px;
-        color: var(--color-white-description);
+        color: var(--color-text-gray-700);
     }
 
     a
@@ -55,8 +55,13 @@ export const Description = styled.div`
         display: inline-block;
         width: 218px;
         height: 54px;
-        box-shadow: 3px 3px 8px -3px #ff009e85;
+        /* box-shadow: 3px 3px 8px -3px #ff009e85; */
         margin-top: 20px;
+        transition: 1s;
+
+        :hover{
+            box-shadow: 4px 4px 14px -3px #b8b8b891;
+        }
     }
 
     a span
@@ -67,7 +72,7 @@ export const Description = styled.div`
         width: 100%;
         height: 100%;
         color: var(--color-background-dark);
-        background: var(--color-primary);
+        background: var(--color-text-gray-800);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,7 +87,7 @@ export const Description = styled.div`
 
     a span:nth-child(2)
     {
-        color: var(--color-primary);
+        color: var(--color-text-gray-800);
         background: var(--color-background-dark);
         overflow: hidden;
         z-index: 2;
@@ -100,32 +105,219 @@ export const Description = styled.div`
         clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 45%);
 
     }
+   
 
     @media screen and (max-width: 975px) {
         width: 100%;
         padding: unset;
         
         > div{
-        color: var(--color-white-description);
+        color: var(--color-text-gray-700);
         font-size: 1.5em;
+
+        
     }
 }
 `
 
 export const Avatar = styled.div`
-    text-align: center;
+
+    
+    svg{
+        padding: 10px 0;
+        width: auto;
+        max-width: 500px;
+
+        #woman{
+            animation: woman 3s ease-in-out infinite;
+        }
+        @keyframes woman
+        {
+            0%, 100%
+            {
+                transform: translateY(3px);
+            }
+            50%
+            {
+                transform: translateY(-1px)
+            }
+        }
+
+        #Vector_6, #Vector_7, #Vector_8, #Vector_15{
+            animation: cabelo 4s ease-in-out infinite;
+        }
+        @keyframes cabelo
+        {
+            0%, 100%
+            {
+                transform: translateY(3px);
+            }
+            50%
+            {
+                transform: translateY(-3px)
+            }
+        }
+
+        #Vector_31{
+            fill: #d60077;
+            opacity: 0.5;
+            animation: vector 6s ease-in-out infinite;
+        }
+        #Vector_32{
+            fill: #d60077;
+            opacity: 0.5;
+            animation: vector 7s ease-in-out infinite;
+        }
+        #Vector_33{
+            fill: #d60077;
+            opacity: 0.5;
+            animation: vector33 8s ease-in-out infinite;
+        }
+        @keyframes vector
+        {
+            0%, 100%
+            {
+                transform: translateX(80px);
+            }
+            50%
+            {
+                transform: translateX(0px)
+            }
+        }
+        @keyframes vector33
+        {
+            0%, 100%
+            {
+                transform: translateX(50px);
+            }
+            50%
+            {
+                transform: translateX(0px)
+            }
+        }
+
+        #folha-circulo{
+            animation: folha-circulo 3s ease-in-out infinite;
+
+        }
+        @keyframes folha-circulo
+        {
+            0%, 100%
+            {
+                transform: translateY(10px);
+            }
+            50%
+            {
+                transform: translateY(-50px)
+            }
+        }
+
+        #folha{
+            animation: folha 5s ease-in-out infinite;
+        }
+        #folha3{
+            animation: folha 5s ease-in-out infinite;
+
+        }
+        @keyframes folha
+        {
+            0%, 100%
+            {
+                transform: translateX(2px);
+            }
+            50%
+            {
+                transform: translateX(-2px)
+            }
+        }
+        #folha2{
+            animation: folha3 3s ease-in-out infinite;
+
+        }
+        @keyframes folha3
+        {
+            0%, 100%
+            {
+                transform: translateX(5px);
+            }
+            50%
+            {
+                transform: translateX(-5px)
+            }
+        }
+
+        #vapor1{
+            animation: vapor 3s ease-in-out infinite;
+            
+        }
+        #vapor2{
+            animation: vapor2 3s ease-in-out infinite;            
+        }
+        #vapor3{
+            animation: vapor3 5s ease-in-out infinite;            
+        }
+        #vapor4{
+            animation: vapor4 5s ease-in-out infinite;            
+        }
+        @keyframes vapor
+        {
+            0%, 100%
+            {
+                transform: translateY(5px);
+            }
+            50%
+            {
+                transform: translateY(-5px)
+            }
+        }
+        @keyframes vapor2
+        {
+            0%, 100%
+            {
+                transform: translateY(5px);
+            }
+            50%
+            {
+                transform: translateY(-5px)
+            }
+        }
+        @keyframes vapor3
+        {
+            0%, 100%
+            {
+                transform: translateY(25px);
+            }
+            50%
+            {
+                transform: translateY(-7px)
+            }
+        }
+        @keyframes vapor4
+        {
+            0%, 100%
+            {
+                transform: translateY(25px);
+            }
+            50%
+            {
+                transform: translateY(-7px)
+            }
+        }
+      
+       
+    }
 
 
 @media screen and (max-width: 975px) {
-    >div{
+    >svg{
         max-height: 261px;
     }
-    >img{
+    /* >img{
         width: 35% !important;
-       }
+       }  */
 }
 @media screen and (max-width: 575px) {
-    >div{
+    >svg{
         max-height: 157px;
     }
 }
