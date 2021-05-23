@@ -43,7 +43,7 @@ export const projectsList = [
         id: 3,
         coverImage: '/page_deboismo01.png',
         coverTitle: '3',
-        coverDescription: '3 Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
+        coverDescription: '33  Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
 
         insideDescription: '1',
         insideProjectLink: 'https://page-deboista-lilia10010.vercel.app/',
