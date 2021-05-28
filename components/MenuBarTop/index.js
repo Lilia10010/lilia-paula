@@ -11,7 +11,7 @@ import {
 
 const MenuBarTop = () => {
    const {theme, toggleTheme} = useContext(StyledThemeContext)
-   console.log('no menu', theme.bg) 
+   //console.log('no menu', theme.bg) 
 
    function menuToggle(){
     const toggleMenu = document.querySelector('.menu')

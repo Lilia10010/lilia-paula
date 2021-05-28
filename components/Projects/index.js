@@ -33,7 +33,6 @@ const Project = () => {
 
     const handleOpenModal = (idModal) =>  {
          const projetcId = projectsList[idModal] 
-         console.log('xxx', projetcId)
 
          setModalCoverTitle(projetcId['coverTitle'])
          setModalInsideProjectLink(projetcId['insideProjectLink'])
