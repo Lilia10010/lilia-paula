@@ -113,7 +113,7 @@ export const Card = styled.div`
 
     :hover{
         background: #ffffff57;
-        transform: translateY(-20px);
+        transform: translateY(-5px);
         box-shadow: 4px 4px 14px -3px #b8b8b891;
         /* box-shadow: 3px 3px 30px -12px #ffffff57; */
     }
@@ -125,10 +125,11 @@ export const Card = styled.div`
 export const WrapperImg = styled.div`
 
     img{
-        width: 100%;
-        height: 100%;
+            width: 100%;
+            height: 100%;
+        }
 
-    }
+    
     width: 260px;
     height: 290px;
 
@@ -142,11 +143,30 @@ export const WrapperImg = styled.div`
 
 export const WrapperImgProject = styled.div`
 
-    > p
+    > h2
     {
-        color: #fff;
+        color: var(--color-text-gray-300);
         padding-bottom: 20px;
     }    
+    a
+    {
+        color: var(--color-text-gray-700);
+        text-decoration: none;
+        transition: 1s;
+        :hover{
+            color: var(--color-primary-hover);
+        }
+    }
+    p
+    {
+        padding: 15px 0;
+        color: var(--color-text-gray-500)
+
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
 
     > svg
     {
@@ -154,12 +174,21 @@ export const WrapperImgProject = styled.div`
         width: 100%;
         margin: 15px 0;
     }
+
+
 `
 export const Content = styled.div`
     top: -27px;
     position: relative;
     text-align: center;
     color: rgb(17, 17, 17);
+
+    p
+    {
+        max-height: 56px;
+        overflow: hidden;
+        padding-top: 5px;
+    }
   
 
 

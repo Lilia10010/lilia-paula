@@ -1,20 +1,25 @@
 export const projectsList = [
     {
-        id: 1,
+        id: 0,
         coverImage: '/page_deboismo01.png',
         coverTitle: 'Landing page',
-        coverDescription: 'Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
 
-        insideDescription: '1',
+        description: 'Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
+
+        insideProjectLink: 'https://page-deboista-lilia10010.vercel.app/',
+        insideImage: '/portal-de-noticiasEvoxNews.png',
+        alt: 'page deboismo'         
+        
+    },
+    {
+        id: 1,
+        coverImage: '/page_deboismo01.png',
+        coverTitle: '2',
+        description: '2 Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
+
         insideProjectLink: 'https://page-deboista-lilia10010.vercel.app/',
 
-        insideImage:
-            {
-            insideImageOne: '/page_deboismo01.png',
-            insideImageTwo: '/page_deboismo01.png',
-            }
-        ,
-
+        insideImage: '/page_deboismo01.png',
         alt: 'page deboismo'
         
         
@@ -22,39 +27,12 @@ export const projectsList = [
     {
         id: 2,
         coverImage: '/page_deboismo01.png',
-        coverTitle: '2',
-        coverDescription: '2 Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
-
-        insideDescription: '1',
-        insideProjectLink: 'https://page-deboista-lilia10010.vercel.app/',
-
-        insideImage:
-            {
-            insideImageOne: '/page_deboismo01.png',
-            insideImageTwo: '/page_deboismo01.png',
-            }
-        ,
-
-        alt: 'page deboismo'
-        
-        
-    },
-    {
-        id: 3,
-        coverImage: '/page_deboismo01.png',
         coverTitle: '3',
-        coverDescription: '33  Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
+        description: '33  Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
 
-        insideDescription: '1',
-        insideProjectLink: 'https://page-deboista-lilia10010.vercel.app/',
+        insideProjectLink: '',
 
-        insideImage:
-            {
-            insideImageOne: '/page_deboismo01.png',
-            insideImageTwo: '/page_deboismo01.png',
-            }
-        ,
-
+        insideImage: '/page_deboismo01.png',
         alt: 'page deboismo'
         
         
