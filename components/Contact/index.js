@@ -99,7 +99,7 @@ const Contact = () => {
                         </a>           
                     </div>              
                     <EmailCopy onClick={() => handleCopy('wrapperCopy') }>
-                        <div  id="wrapperCopy">contato@liliapaula.com</div> 
+                        <div  id="wrapperCopy">liliaxtz2@gmail.com</div> 
                         <Copy width="24" />
                         <span>{copySuccess}</span>
                     </EmailCopy>

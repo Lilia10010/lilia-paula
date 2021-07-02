@@ -32,7 +32,6 @@ export const Description = styled.div`
     width: 50%;
 
    > h3{
-    padding: 50px 0 15px;
     font-size: var(--font-title);
     }
 
@@ -42,7 +41,7 @@ export const Description = styled.div`
     }
 
     > p{
-        padding: 50px 0 24px;
+        padding: 50px 0 6px;
         color: var(--color-text-gray-700);
     }
 
