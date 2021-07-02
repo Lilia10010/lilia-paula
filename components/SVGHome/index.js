@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 const Container = styled.div`
        >svg{
-           height: auto;
-           width: 296px;
+           height: auto !important;
+           width: 296px !important;
            padding: 27px 0px !important;
        }
        .mult-color{
