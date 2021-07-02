@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
+       >svg{
+           height: auto;
+           width: 296px;
+           padding: 27px 0px !important;
+       }
        .mult-color{
            animation: changeColor 5s linear infinite;
        } 
