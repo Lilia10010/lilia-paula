@@ -20,6 +20,7 @@ const Home = () => {
                         <p>Hey, eu sou a</p>
                         <h3>Lília Paula</h3>
                         <div>Desenvolvedora Front-End</div>
+                        <p>Este é meu portfólio apenas com projetos pessoas</p>
                         <a href="https://www.linkedin.com/in/lilia-paula-neiva/" target="_blank">
                             <span><Linkedin width="17"/>Linkedin</span>
                             <span><Linkedin width="17"/>Linkedin</span>
