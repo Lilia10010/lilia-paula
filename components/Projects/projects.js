@@ -4,7 +4,7 @@ export const projectsList = [
         coverImage: '/cover_pageProffy.jpg',
         coverTitle: 'Aulas Online',
 
-        description: 'Projeto desenvolvido durante a NLW II da Rocketseat. Techs: ReactJS, TypeScript, CSS',
+        description: 'Projeto desenvolvido durante a NLW II da Rocketseat. Techs utilizadas: ReactJS, TypeScript, CSS',
 
         insideProjectLink: 'https://nlw-2-app-typescript.vercel.app/',
         insideImage: '/insede_proffy.jpg',
@@ -13,14 +13,14 @@ export const projectsList = [
     },
     {
         id: 1,
-        coverImage: '/page_deboismo01.png',
-        coverTitle: '2',
-        description: '2 Lorem ipsum dolor,  facere ipsum alias tempore ad? Ducimus eos facere fuga quia autem eum ratione quos.',
+        coverImage: '/cover_appmoney.jpg',
+        coverTitle: 'Aplicativo de Finanças',
+        description: 'Projeto desenvolvido no programa da Rocketseat o Ignite. Techs utilizadas: ReactJS, TypeScript, Mirage, Styled Components ',
 
-        insideProjectLink: 'https://page-deboista-lilia10010.vercel.app/',
+        insideProjectLink: 'https://github.com/Lilia10010/appFinances',
 
-        insideImage: '/page_deboismo01.png',
-        alt: 'page deboismo'
+        insideImage: '/insede_appmoney.jpg',
+        alt: 'Aplicativo de finanças'
         
         
     },

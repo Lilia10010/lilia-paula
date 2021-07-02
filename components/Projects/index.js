@@ -96,7 +96,7 @@ const Project = () => {
                     <h2>{modalCoverTitle}</h2>
                     {modalInsideProjectLink &&                     
                     <a href={modalInsideProjectLink} target="_blank" rel="noopener noreferrer external">
-                        Click aqui para ver o protótipo do projeto <Github width="20"/> 
+                        Click aqui para ver o protótipo ou repositório do projeto <Github width="20"/> 
                     </a> }
                     <p>{modalDescription}</p>
                     <img src={modalInsideImage} alt={modalInsideImageAlt}/>

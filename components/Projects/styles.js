@@ -186,7 +186,7 @@ export const Content = styled.div`
 
     p
     {
-        max-height: 56px;
+        max-height: 63px;
         overflow: hidden;
         padding-top: 5px;
     }
