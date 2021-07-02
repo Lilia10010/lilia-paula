@@ -1,28 +1,33 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-       >svg{
+       .mult-color
+       {
+           animation: changeColor 5s linear infinite;
+       } 
+    #folha-circulo, #vapor3, #vapor4, #Vector_31, #Vector_32, #Vector_33
+       {
+        fill: #d60077!important;
+       }
+
+       @keyframes changeColor
+       {
+           0%{
+               filter: hue-rotate(0deg);
+           }
+           100%{
+               filter: hue-rotate(360deg);
+           }
+       }
+
+  @media screen and (max-width: 975px) {
+         >svg
+         {
            height: auto !important;
            width: 296px !important;
            padding: 27px 0px !important;
-       }
-       .mult-color{
-           animation: changeColor 5s linear infinite;
-       } 
-    #folha-circulo, #vapor3, #vapor4, #Vector_31, #Vector_32, #Vector_33{
-        fill: #d60077!important;
-}
-
-@keyframes changeColor
-{
-    0%{
-        filter: hue-rotate(0deg);
+        }
     }
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
-
 
 `
 
