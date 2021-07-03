@@ -10,7 +10,6 @@
     "@unform/core": "^2.1.5",
     "@unform/web": "^2.1.5",
     "next": "latest",
-    "next-plugin-svgr": "^1.0.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
