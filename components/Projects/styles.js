@@ -182,7 +182,7 @@ export const Content = styled.div`
     top: -27px;
     position: relative;
     text-align: center;
-    color: rgb(17, 17, 17);
+    color: #000;
 
     p
     {

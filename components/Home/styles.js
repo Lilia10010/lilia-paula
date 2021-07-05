@@ -42,7 +42,7 @@ export const Description = styled.div`
 
     > p{
         padding: 50px 0 6px;
-        color: var(--color-text-gray-700);
+        color: var(--color-text-gray-500);
     }
 
     a
