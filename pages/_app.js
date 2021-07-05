@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { ThemeProvider } from '../contexts/themeContext'
 
-import Modal from 'react-modal';
-
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;

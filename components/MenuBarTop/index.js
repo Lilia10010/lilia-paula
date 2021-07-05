@@ -27,25 +27,14 @@ const MenuBarTop = () => {
                     <Menu2 />
                 </div> 
 
-                <div className="menu">   
-                    {/* <h3>Menu ulala<br/><span>Líilia Paula Neiva</span></h3>          */}
+                <nav className="menu">   
                     <ul>
                         <li><a href="#home-section">Home</a></li>
                         <li><a href="#home-projects">Projetos</a></li>
                         <li><a href="#home-techs">Techs</a></li>
                         <li><a href="#home-contact">Contato</a></li>
-                        {/* <label
-                    onClick={toggleTheme}
-                    checked={theme.title === 'dark' }
-                    >
-                        {theme.title === 'dark' ? (
-                            <Moon color="#fbce32" size={24} />
-                        ) : (
-                            <Moon color="#d9a1a1" size={24} />
-                            )}
-                    </label>    */}
                     </ul> 
-                </div>              
+                </nav>              
 
                           
             </MenuLinks>

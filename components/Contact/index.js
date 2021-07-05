@@ -88,13 +88,29 @@ const Contact = () => {
                 </WrapperImageContact>
                   <IconsSocial>  
                     <div>
-                        <a href="https://api.whatsapp.com/send?phone=5585981326645&text=Ol%C3%A1%20L%C3%ADlia%2C%20gostaria%20de%20bater%20um%20papo%20com%20voc%C3%AA%20%3A)" target="_blank">
+                        <a
+                            aria-label="WhatsApp"
+                            href="https://api.whatsapp.com/send?phone=5585981326645&text=Ol%C3%A1%20L%C3%ADlia%2C%20gostaria%20de%20bater%20um%20papo%20com%20voc%C3%AA%20%3A)" 
+                            target="_blank"
+                            rel="noopener noreferrer external"                            
+                        >
                             <Whatsapp width="50"/>                
                         </a>
-                        <a href="https://github.com/lilia10010" target="_blank">
+
+                        <a 
+                            aria-label="Github"
+                            href="https://github.com/lilia10010" 
+                            target="_blank"
+                            rel="noopener noreferrer external" 
+                        >
                             <Github width="50"/>                
                         </a>
-                        <a href="https://www.linkedin.com/in/lilia-paula-neiva/" target="_blank">              
+                        <a 
+                            aria-label="Linkedin" 
+                            href="https://www.linkedin.com/in/lilia-paula-neiva/" 
+                            target="_blank"
+                            rel="noopener noreferrer external" 
+                        >              
                             <Linkedin width="50"/>
                         </a>           
                     </div>              
