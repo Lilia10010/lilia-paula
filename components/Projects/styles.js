@@ -53,7 +53,7 @@ export const Card = styled.div`
     box-shadow: 0 5px 202px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
 
-    background: #ffffff3d;
+    background: rgb(255 255 255 / 52%);
     backdrop-filter: blur(5px);
     box-shadow: -1px 15px 30px -12px black;
 
