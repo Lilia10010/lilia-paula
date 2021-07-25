@@ -13,19 +13,10 @@ export const Title = styled.h1`
 `
 
 export const WrapperTechs = styled.div`
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap; */
 `
 
-export const Tech = styled.div`
-    /* display: flex;
-    justify-content: center;
-    //width: 20%;
-    
-    flex-direction: column;
-    align-items: center; */
-    
+export const Tech = styled.div`    
+    width: 20%;
     min-width: 125px;
     padding-bottom: 23px;
     
@@ -36,7 +27,6 @@ export const Tech = styled.div`
         
         width: 124px;
         height: 111px;
-        //background: #eeeeee;
         box-shadow: 0px 0px 13px 2px #000;
         padding: 15px 13px;
         border: solid 1px #494949;
