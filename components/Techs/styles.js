@@ -15,7 +15,9 @@ export const Title = styled.h1`
 export const WrapperTechs = styled.div`
 `
 
-export const Tech = styled.div`    
+export const Tech = styled.div`  
+    display: flex;
+    justify-content: center;  
     width: 20%;
     min-width: 125px;
     padding-bottom: 23px;
