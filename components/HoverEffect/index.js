@@ -6,7 +6,7 @@ const HoverEffect = () =>{
 
     const span = []
 
-    for(let i = 0; i < 1500; i++){
+    for(let i = 0; i < 1700; i++){
         span.push(<span></span>)
     }
 

@@ -1,6 +1,3 @@
-import { useContext } from 'react'
-import { StyledThemeContext } from '../../contexts/themeContext'
-import { Moon } from '@styled-icons/boxicons-regular/Moon' 
 import { Menu2 } from '@styled-icons/evaicons-solid/Menu2'  
 
 import { 
@@ -9,24 +6,20 @@ import {
 } from './styles'
 
 
-const MenuBarTop = () => {
-   const {theme, toggleTheme} = useContext(StyledThemeContext)
-   //console.log('no menu', theme.bg) 
+const MenuBarTop = () => { 
 
-   function menuToggle(){
-    const toggleMenu = document.querySelector('.menu')
-    const backgroundMenu = document.querySelector('.container')
-    toggleMenu.classList.toggle('active')
-}
-  
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.menu')
+        const backgroundMenu = document.querySelector('.container')
+        toggleMenu.classList.toggle('active')
+    }
     
     return(
         <Container className="container">
-            <MenuLinks className="action-menu-mobile">   
+            <MenuLinks className="action-menu-mobile"> 
                 <div className="profile" onClick={() => menuToggle()}>
                     <Menu2 />
-                </div> 
-
+                </div>   
                 <nav className="menu">   
                     <ul>
                         <li><a href="#home-section">Home</a></li>

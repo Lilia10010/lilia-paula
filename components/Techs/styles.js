@@ -12,81 +12,60 @@ export const Title = styled.h1`
     font-size: var(--font-title);
 `
 
-export const BorderGradient = styled.div`
-    position: relative;
-    background: #f10;
-    z-index: 1;
-
-    ::before{
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    /* background: #fff; */
-    z-index: -1;
-    }
-
-    ::after{
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    /* background: #fff; */
-    z-index: -1;
-    /* filter:  blur(40px); */
-    }
-
-    
-    ::before{
-    background: linear-gradient(235deg, #772aff, #010615, #2196f3);
-    }
-    ::after{
-    background: linear-gradient(235deg, var(--color-primary), #010615, var(--color-primary));
-    }
-`
-
-
-// const ContentRowCSS = css``
-
-export const WrapperSlider = styled.div`
-    background: #fff;
-    cursor: pointer; 
-
-    .slick-slide{
-        text-align: center;
-    }
-
-    .slick-dots{
-        li button::before{
-            color: #fff !important;
-           
-        }
-    }
+export const WrapperTechs = styled.div`
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
 `
 
 export const Tech = styled.div`
-div{
+    /* display: flex;
+    justify-content: center;
+    //width: 20%;
+    
+    flex-direction: column;
+    align-items: center; */
+    
+    min-width: 125px;
+    padding-bottom: 23px;
+    
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 124px;
+        height: 111px;
+        //background: #eeeeee;
+        box-shadow: 0px 0px 13px 2px #000;
+        padding: 15px 13px;
+        border: solid 1px #494949;
+        border-radius: 10px;
+        
+        transition: 0.5s;
 
-    display: flex;
-    align-items: center;
-    position: relative;
+       svg{
+          margin-bottom: 10px;
+       }
 
-    max-width: 200px;
-    text-align: center;
-
-     
-
-  
-}
-
-    @media screen and (max-width: 575px) {
-        max-width: 100px;
+       :hover{           
+           border-color: #ff008e;           
+        }
+    }
+    .imageTech span{
+       margin-top: 10px !important;
     }
 
-    
+   
+
+    @media screen and (max-width: 800px) {
+       margin-right: 10px;
+    }
+`
+
+export const Row = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `
 

@@ -1,38 +1,31 @@
-import Icon from 'next/image'
+import { Whatsapp } from '@styled-icons/fa-brands/Whatsapp'
+import Image from 'next/image'
 
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import { Javascript } from '@styled-icons/simple-icons/Javascript'
+import { ReactLogo } from '@styled-icons/boxicons-logos/ReactLogo'
+import { Gatsby } from '@styled-icons/remix-line/Gatsby'
+import { Typescript } from '@styled-icons/simple-icons/Typescript'
+import { Sass } from '@styled-icons/fa-brands/Sass'
+import { StyledComponents } from '@styled-icons/simple-icons/StyledComponents'
+import { Tailwindcss } from '@styled-icons/simple-icons/Tailwindcss'
+import { Html5 } from '@styled-icons/remix-line/Html5'
+import { Css3 } from '@styled-icons/foundation/Css3'
+import { Github } from '@styled-icons/boxicons-logos/Github'
+
+
 
 import { 
     Container,
     Title,
-    WrapperSlider,
+    WrapperTechs,
     Tech,
-    BorderGradient
+    Row
 } from './styles'
 
 
 
 
 const Techs  = () => {
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: true
-      }
-
-    if (process.browser) {
-        if (window.matchMedia("(max-width: 500px)").matches) {
-           
-        } 
-      }
-
    
     return(
         
@@ -41,56 +34,96 @@ const Techs  = () => {
 
             
             <Title>Techs</Title>
+            <WrapperTechs>
+            <Row>
+                <Tech>
+                    <div>
+                        <Javascript width={50} height={50} />
+                        JavaScript
+                    </div>
+                </Tech>
+                <Tech>
+                    <div>
+                        <ReactLogo width={50} height={50} />
+                        ReactJs
+                    </div>
+                </Tech>
+                <Tech>
+                    <div>
+                        <Image src="/nextjs.svg" width={50} height={50} />
+                        NextsJS
+                    </div>
+                </Tech>
+                <Tech>
+                    <div>
+                        <Gatsby width={50} height={50} />
+                        Gatsby
+                    </div>
+                </Tech>
+                <Tech>
+                    <div>
+                        <Typescript width={50} height={50} />
+                        TypeScript
+                    </div>
+                </Tech>
+            </Row>
 
-            <BorderGradient>
-
-                     
-                <WrapperSlider>
-                   { process.browser && settings ? (
-                       <Slider {...settings}>
-                        <Tech>
-                            <Icon src="/icon_html_css.svg" width="200px" height="200px" /> 
-                        </Tech>
-                        <Tech>
-                            <Icon src="/icon_react_js.svg" width="200px" height="200px" /> 
-                        </Tech>                    
-                        <Tech>
-                            <Icon src="/icon_next_js.svg" width="200px" height="200px" /> 
-                        </Tech>
-                        <Tech>
-                            <Icon src="/icon_javascript.svg" width="200px" height="200px" />                     
-                        </Tech>         
-                        <Tech>
-                            <Icon src="/icon_typescript.svg" width="200px" height="200px" />                     
-                        </Tech>         
-                        <Tech>
-                            <Icon src="/icon_sass.svg" width="200px" height="200px" />                     
-                        </Tech>         
-                        <Tech>
-                            <Icon src="/icon_styled_components.svg" width="200px" height="200px" />                     
-                        </Tech>         
-                        <Tech>
-                            <Icon src="/icon_tailwindcss.svg" width="200px" height="200px" />                     
-                        </Tech>         
-                        <Tech>
-                            <Icon src="/icon_gastby.svg" width="200px" height="200px" />                     
-                        </Tech>         
-                    </Slider>
-
-): null}
-                   
-                   
-                </WrapperSlider>
-</BorderGradient>
-           
+            <Row>
+                <Tech>
+                    <div>
+                        <Sass width={50} height={50} />
+                        Sass
+                    </div>
+                </Tech>
+                <Tech>
+                    <div>
+                        <StyledComponents width={50} height={50} />
+                       <span>Styled</span>
+                       <span>Components</span>  
+                    </div>
+                </Tech>
+                <Tech>
+                    <div>
+                        <Tailwindcss width={50} height={50} />
+                        Tailwindcss
+                    </div>
+                </Tech>
+                <Tech>
+                    <div className="imageTech">
+                        <Image src="/chakrauiicon.svg" width={50} height={50} marginBottom={10}/>
+                        <span>Chakra ui</span>
+                    </div>
+                </Tech>
+            </Row>
 
 
+                <Row>
+                    <Tech>
+                        <div>
+                            <Html5 width={50} height={50} />
+                            HTML 5
+                        </div>
+                    </Tech>               
+                    <Tech>
+                        <div>
+                            <Css3 width={50} height={50} />
+                            CSS 3
+                        </div>
+                    </Tech>               
+                    <Tech>
+                        <div>
+                            <Github width={50} height={50} />
+                            GitHub
+                        </div>
+                    </Tech>               
+                </Row>
+             
 
 
-        </Container>
-
-        
-    
+             
+               
+            </WrapperTechs>   
+        </Container>   
         
     )
 }

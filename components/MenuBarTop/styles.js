@@ -2,15 +2,15 @@ import styled from 'styled-components'
 import { iconSun } from '@styled-icons/typicons/WeatherSunny'
  
 export const Container = styled.div`
+background: ${props => props.theme.bg};
     display: flex;
     justify-content: flex-end;
     position: fixed;
     z-index: 10;
     width: 100%;
-
     height: 50px;
     align-items: center;
-
+    
 `
 
 export const MenuLinks = styled.div`

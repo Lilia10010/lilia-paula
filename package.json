@@ -7,19 +7,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "@unform/core": "^2.1.5",
-    "@unform/web": "^2.1.5",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
     "react-modal": "^3.12.1",
-    "react-slick": "^0.28.1",
     "react-switch": "^6.0.0",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^5.0.0",
-    "styled-icons": "^10.27.0",
-    "yup": "^0.32.8"
+    "styled-icons": "^10.27.0"
   },
   "devDependencies": {},
   "license": "MIT"

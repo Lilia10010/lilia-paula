@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import { ThemeProvider } from '../contexts/themeContext'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -9,16 +8,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-//Modal.setAppElement('#root')
-
 export default function App({ Component, pageProps }) {
   return (
     <>
    
       <GlobalStyle />
-      <ThemeProvider>
         <Component {...pageProps} />
-      </ThemeProvider>
     </>
   )
 }

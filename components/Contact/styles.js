@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;    
+      
     position: relative;
     padding-top: var(--padding-container);
 
@@ -19,7 +16,19 @@ export const Container = styled.footer`
        .teste{display:none;}
     }
 `
+export const ContainerBottom = styled.div`
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+`
 
+
+export const Title = styled.h1`
+    color: var(--color-text-gray-300);
+    padding-bottom: 50px;    
+    font-size: var(--font-title);
+`
 
 export const IconsSocial = styled.div`
   z-index: 2;
@@ -125,12 +134,18 @@ export const WrapperContact = styled.div`
 export const Footer = styled.div`
   color: var(--color-text-white);
    padding: 15px 0;  
+   position: absolute;
+    bottom: -65px;
 
    @media screen and (max-width: 575px){
         
     }
 `
 export const WrapperImageContact = styled.div`
+
+/* img{
+  max-width: 90% !important;
+} */
  @media screen and (max-width: 575px){
         display: none;
     }
